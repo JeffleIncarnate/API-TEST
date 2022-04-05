@@ -14,5 +14,3 @@ def read_json():
     return jsonList
 
 read_json()
-
-print(jsonList)

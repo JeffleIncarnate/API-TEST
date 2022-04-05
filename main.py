@@ -1,6 +1,7 @@
 from typing import Optional
 from fastapi import FastAPI
-import Reader
+from Reader import read_json
+
 
 app = FastAPI()
 
@@ -12,4 +13,4 @@ async def read_root():
 
 @app.get("/api/readed")
 async def return_data():
-    return Reader.read_json()
+    return read_json()
